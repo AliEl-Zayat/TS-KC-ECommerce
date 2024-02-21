@@ -1,12 +1,10 @@
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
-
 import {
   actGetProductsByCatPrefix,
   productsCleanUp,
 } from "@store/products/productsSlice";
 import { useAppDispatch, useAppSelector } from "@store/hooks";
-
 import { Container } from "react-bootstrap";
 import { Product } from "@components/eCommerce";
 import { Loading } from "@components/index";

@@ -16,9 +16,8 @@ const actGetCategories = createAsyncThunk(
     } catch (error) {
       if (axios.isAxiosError(error)) {
         return rejectWithValue(error.response?.data.message || error.message);
-      } else {
-        return rejectWithValue("An error occurred");
       }
+      return rejectWithValue("An error occurred");
     }
   }
 );
